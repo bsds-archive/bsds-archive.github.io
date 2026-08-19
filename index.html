@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>BSDS Archive · Indian Statistical Institute</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- All visual styling lives in one shared file -->
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div id="scatter"></div>
+
+<header class="topbar">
+  <div class="brand">
+    <div class="mark">σ</div>
+    <div>
+      BSDS ARCHIVE
+      <small>INDIAN STATISTICAL INSTITUTE</small>
+    </div>
+  </div>
+
+  <!-- desktop nav / mobile slide-in menu (same element, styled per breakpoint) -->
+  <nav class="top-links" id="navLinks">
+    <a href="index.html" class="current">Home</a>
+    <a href="#about">Why BSDS</a>
+    <a href="#announcements">Announcements</a>
+    <a href="semesters.html">Semesters</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- dims the page and closes the menu when tapped, mobile only -->
+  <div class="nav-backdrop" id="navBackdrop"></div>
+  <!-- hamburger button, shown only under 780px via CSS. The three <span class="bar">
+       elements morph into an "X" via CSS when .active is toggled in app.js -->
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+  </button>
+</header>
+
+<main>
+  <!-- ============================= HERO ============================= -->
+  <section class="hero">
+    <div>
+      <div class="eyebrow">B.S. in Data Science · Indian Statistical Institute</div>
+      <h1 class="headline">Where numbers<br>learn to <em>speak</em>.</h1>
+      <p class="lede">BSDS is ISI's undergraduate programme for a data-driven world — four years of statistics, mathematics, probability and economics, taught the way only ISI teaches it: rigorous, theory-first, and relentlessly applied. This is the students' own archive built alongside it — every semester's notes, papers and calendar, in one place.</p>
+      <div class="hero-stats">
+        <div><b>04</b><span>YEAR PROGRAMME</span></div>
+        <div><b>06</b><span>SEMESTERS</span></div>
+        <div><b>2025–26</b><span>CURRENT BATCH</span></div>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="semesters.html">
+          Explore Semesters
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#announcements">Latest Announcements</a>
+      </div>
+    </div>
+
+    <!-- decorative bell-curve motif -->
+    <div class="hero-figure">
+      <svg viewBox="0 0 420 260">
+        <line class="axis" x1="20" y1="220" x2="400" y2="220"/>
+        <line class="axis" x1="20" y1="220" x2="20" y2="20"/>
+        <text class="tick" x="30"  y="235">-3σ</text>
+        <text class="tick" x="200" y="235">μ</text>
+        <text class="tick" x="370" y="235">+3σ</text>
+        <path class="draw-fill" d="M20,220 C 90,220 120,40 210,40 C 300,40 330,220 400,220 Z" fill="var(--gold)"/>
+        <path class="draw-line" d="M20,220 C 90,220 120,40 210,40 C 300,40 330,220 400,220"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ============================= ABOUT ============================= -->
+  <div class="section-head" id="about">
+    <h2>Why BSDS</h2>
+    <p>Four pillars, one programme.</p>
+  </div>
+  <section class="about">
+    <p class="about-lede">Most data science degrees bolt a few statistics courses onto a computer science curriculum. BSDS does the opposite — it starts from ISI's seventy-year foundation in statistical theory, and builds outward into the mathematics, probability and economics that make data actually mean something. You don't just learn to run a model. You learn why it works, when it breaks, and what to do next.</p>
+
+    <div class="feature-grid" id="featureGrid">
+      <div class="feature-card">
+        <div class="f-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h14l-6 8 6 8H4l6-8z"/></svg>
+        </div>
+        <h3>Statistical Rigor</h3>
+        <p>A curriculum built on ISI's decades of statistical pedigree — theory first, applications close behind.</p>
+      </div>
+      <div class="feature-card">
+        <div class="f-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 4v16M6 4c6 0 6 8 12 8M6 20c6 0 6-8 12-8"/></svg>
+        </div>
+        <h3>Mathematical Foundations</h3>
+        <p>Real analysis, linear algebra and calculus woven through every semester, not bolted on at the end.</p>
+      </div>
+      <div class="feature-card">
+        <div class="f-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="8" r="2.5"/><circle cx="8" cy="16" r="2.5"/><path d="M14 20C14 10 18 10 20 4"/></svg>
+        </div>
+        <h3>Probabilistic Thinking</h3>
+        <p>From first principles to stochastic processes — probability as a way of reasoning, not just a subject to pass.</p>
+      </div>
+      <div class="feature-card">
+        <div class="f-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l7-7 8 8M4 4l16 16"/></svg>
+        </div>
+        <h3>Economics & Impact</h3>
+        <p>Markets, incentives and behaviour — because data science doesn't exist in a vacuum.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= ANNOUNCEMENTS ========================= -->
+  <!-- content is fetched at runtime from data/announcements.txt -->
+  <div class="section-head" id="announcements">
+    <h2>Announcements</h2>
+    <p>Pulled straight from a plain text file — edit it any time.</p>
+  </div>
+  <div class="search-wrap">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    <input type="search" id="homeAnnounceSearch" class="search-box" placeholder="Search announcements…">
+  </div>
+  <div class="announce-grid" id="announcementsList">
+    <!-- populated by loadAnnouncements() in js/app.js -->
+  </div>
+
+  <!-- ============================= CTA ================================ -->
+  <section class="about">
+    <div class="cta-banner" id="ctaBanner">
+      <div>
+        <h3>Ready to see your semester?</h3>
+        <p>Materials, syllabus, timetable and academic calendar — organised by semester, updated by the batch.</p>
+      </div>
+      <a class="btn btn-primary" href="semesters.html">
+        Go to Semesters
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2025–26 · BSDS Archive</span>
+    <span>Built for students, by students</span>
+  </footer>
+</main>
+
+<!-- Data first, then behavior -->
+<script src="js/app.js"></script>
+<script>
+  // Page-specific bootstrap: only the calls this page actually needs.
+  document.addEventListener('DOMContentLoaded', () => {
+    initScatter();
+    initMobileNav();
+    loadAnnouncements('data/announcements.txt', 'announcementsList');
+    initFilterBox('homeAnnounceSearch', '#announcementsList .announce-card');
+    initScrollReveal('.feature-card');
+    initScrollReveal('.cta-banner');
+  });
+</script>
+
+</body>
+</html>
