@@ -32,9 +32,10 @@ is hosted anywhere online (GitHub Pages, Netlify, your college
 server, etc.) this works automatically with no extra steps.
 
 
-### 15 Aug 2026 | Semester I orientation on 20 Aug
-Orientation for all incoming Semester I students will be held on
-20 Aug at 10:00 AM in Auditorium 2. Attendance is compulsory.
+### 15 Aug 2026 | Semester I orientation on 20 Aug 
+Orientation for all incoming Semester I students will be held on 20 Aug at 10:00 AM in Auditorium 2. 
+Attendance is compulsory.
+~Admin
 
 ### 10 Aug 2026 | Mid-semester datesheet released
 The mid-semester examination datesheet for Semester I has been
