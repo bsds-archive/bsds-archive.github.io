@@ -87,7 +87,7 @@ SEMESTER_DATA.sem1 = {
       glyph: `<path d="M10,32 Q10,6 22,6 L22,32 Q22,6 34,6" /><line x1="40" y1="10" x2="56" y2="10"/><line x1="40" y1="20" x2="56" y2="20"/>`,
       categories: [
         { name:"Lecture Notes", items:[
-          {t:"Sequences, Series & Limits", m:"PDF · 20p", file:"files/mathematics/sequences-series-limits.pdf"},
+          {t:"Sequences, Series & Limits", m:"PDF · 20p", file:"files/mathematics/book.pdf"},
           {t:"Differential & Integral Calculus", m:"PDF · 26p"},
           {t:"Vectors & Matrix Algebra", m:"PDF · 22p"},
         ]},
