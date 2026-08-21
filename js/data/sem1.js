@@ -100,7 +100,7 @@ SEMESTER_DATA.sem1 = {
           {t:"End-Semester 2024", m:"PDF"},
         ]},
         { name:"Reference Reading", items:[
-          {t:"Elementary Analysis - Kenneth A. Ross", m:"Book", file:"materials\sem1\mathematics1\booksElementary-analysis-the-theory-of-calculus-second-edition.pdf"},
+          {t:"Elementary Analysis - Kenneth A. Ross", m:"Book", file:"materials/semester1/mathematics1/books/Elementary-analysis-the-theory-of-calculus-second-edition.pdf"},
         ]},
       ]
     },
