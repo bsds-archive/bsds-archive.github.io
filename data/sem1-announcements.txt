@@ -35,7 +35,7 @@ data/<semester-key>-announcements.txt automatically, so no code
 changes are needed, just the new .txt file.
 
 
-### 15 Aug 2026 | Semester I orientation on 20 Aug
+### 15 Aug 2026 | Semester I orientation on 20 Aug | posted by CR~Admin
 Orientation for all incoming Semester I students will be held on
 20 Aug at 10:00 AM in Auditorium 2. Attendance is compulsory.
 
