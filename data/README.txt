@@ -1,0 +1,38 @@
+HOW TO EDIT THIS FILE
+======================
+Everything above the first "### " line (including this note) is
+ignored — it's just for you. To add a new announcement, copy this
+block and paste it above the others (newest on top is easiest, but
+the site sorts by date automatically anyway, so order here doesn't
+actually matter):
+
+### DD Mon YYYY | Your title here | Your name (optional)
+Your announcement text goes here. You can write a few sentences,
+across a couple of lines if you like — everything until the next
+"### " line is treated as the body of this announcement.
+
+Rules:
+  - Each announcement MUST start with a line beginning "### "
+  - After "### " put the date, then a "|", then the title
+  - Optionally add a second "|" and your name — it'll show as
+    "Posted by <name>" on the card. Leave it off entirely and no
+    byline shows; a first name or initials is fine, no need for a
+    full name
+  - The date should be something JavaScript can parse, e.g.
+    "17 Aug 2026" or "2026-08-17" both work fine
+  - Leave a blank line between announcements (not required, but
+    keeps the file easy to read)
+  - Save the file — refresh the page (via a local server, see
+    below) to see the change
+
+Viewing this locally: opening index.html by double-clicking it
+won't load this file, because browsers block that for security
+reasons. Instead, run this once from inside the site folder:
+
+    python3 -m http.server
+
+...then open http://localhost:8000 in your browser. Once the site
+is hosted anywhere online (GitHub Pages, Netlify, your college
+server, etc.) this works automatically with no extra steps.
+
+

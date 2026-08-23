@@ -1,0 +1,52 @@
+HOW TO EDIT THIS FILE
+======================
+This is the Announcements tab on the Semester I page specifically —
+separate from the site-wide announcements feed on the homepage
+(data/announcements.txt). Same format, same rules, different file.
+
+Everything above the first "### " line (including this note) is
+ignored. To add a new announcement, copy a block below and paste it
+above the others — order doesn't actually matter, the site sorts by
+date automatically.
+
+Rules:
+  - Each announcement MUST start with a line beginning "### "
+  - After "### " put the date, then a "|", then the title
+  - Optionally add a second "|" and your name — it'll show as
+    "Posted by <name>" on the card. Leave it off and no byline
+    shows; a first name or initials is fine
+  - The date should be something JavaScript can parse, e.g.
+    "17 Aug 2026" or "2026-08-17" both work fine
+  - Leave a blank line between announcements for readability
+  - Save the file — refresh the page (via a local server, see below)
+    to see the change
+
+Viewing this locally: opening semester1.html by double-clicking it
+won't load this file, because browsers block that for security
+reasons. Instead, run this once from inside the site folder:
+
+    python3 -m http.server
+
+...then open http://localhost:8000 in your browser. Once the site
+is hosted anywhere online (GitHub Pages, Netlify, your college
+server, etc.) this works automatically with no extra steps.
+
+WHEN PUBLISHING SEMESTER 2, 3, etc.: create a matching
+data/sem2-announcements.txt, data/sem3-announcements.txt, and so on —
+initSemesterPage() in js/app.js looks for a file named
+data/<semester-key>-announcements.txt automatically, so no code
+changes are needed, just the new .txt file.
+
+
+### 15 Aug 2026 | Semester I orientation on 20 Aug
+Orientation for all incoming Semester I students will be held on
+20 Aug at 10:00 AM in Auditorium 2. Attendance is compulsory.
+
+### 10 Aug 2026 | Mid-semester datesheet released
+The mid-semester examination datesheet for Semester I has been
+published. Check the Academic Calendar tab above for exact dates.
+
+### 05 Aug 2026 | Statistics I — Problem Set 2 uploaded | Priya
+Problem Set 2 (Moments & Skewness) is now available under
+Statistics I → Assignments. Submission deadline is one week from
+the date of upload.
