@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>Semesters · BSDS Archive</title>
+<link rel="shortcut icon" type="img/png" href="./style/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div id="scatter"></div>
+
+<header class="topbar">
+  <div class="brand">
+    <div class="mark">σ</div>
+    <div>
+      BSDS ARCHIVE
+      <small>ISI</small>
+    </div>
+  </div>
+
+  <nav class="top-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="index.html#about">Why BSDS</a>
+    <a href="index.html#announcements">Announcements</a>
+    <a href="semesters.html" class="current">Semesters</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="nav-backdrop" id="navBackdrop"></div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+  </button>
+</header>
+
+<main>
+  <section class="hero hero-compact">
+    <div>
+      <div class="eyebrow"><a href="index.html">Home</a> · Semesters</div>
+      <h1 class="headline">Eight semesters.<br>One <em>archive</em>.</h1>
+      <p class="lede">Notes, problem sets, previous-year papers, syllabi, timetables and academic calendars for every course in the programme — pick a semester to get started.</p>
+    </div>
+
+    <!-- decorative "staircase" motif: 8 nodes = 8 semesters, in order -->
+    <div class="hero-figure">
+      <svg viewBox="0 0 420 220">
+        <path class="draw-line" d="M20,190 L72,190 L72,168 L123,168 L123,146 L174,146 L174,124 L226,124 L226,102 L277,102 L277,80 L328,80 L328,57 L380,57 L380,35"/>
+        <circle class="node-dot active" cx="20" cy="190" r="7"/>
+        <circle class="node-dot" style="animation-delay:.8s"  cx="72"  cy="168" r="6"/>
+        <circle class="node-dot" style="animation-delay:.95s" cx="123" cy="146" r="6"/>
+        <circle class="node-dot" style="animation-delay:1.1s" cx="174" cy="124" r="6"/>
+        <circle class="node-dot" style="animation-delay:1.25s" cx="226" cy="102" r="6"/>
+        <circle class="node-dot" style="animation-delay:1.4s"  cx="277" cy="80"  r="6"/>
+        <circle class="node-dot" style="animation-delay:1.55s" cx="328" cy="57"  r="6"/>
+        <circle class="node-dot" style="animation-delay:1.7s"  cx="380" cy="35"  r="6"/>
+        <text class="tick" x="10"  y="210">I</text>
+        <text class="tick" x="368" y="20">VIII</text>
+      </svg>
+    </div>
+  </section>
+
+  <div class="section-head" id="timeline">
+    <h2>Choose a Semester</h2>
+    <p>Semester I is open. The rest are being catalogued.</p>
+  </div>
+  <section class="timeline" id="rows">
+    <!-- populated by renderSemesterTimeline() in js/app.js -->
+  </section>
+
+  <footer>
+    <span>© 2026–27 · BSDS Archive</span>
+    <span>Built for students, by students</span>
+  </footer>
+</main>
+
+<script src="js/data/semester-list.js"></script>
+<script src="js/app.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    initScatter();
+    initFixedHeader();
+    initMobileNav();
+    renderSemesterTimeline('rows');
+  });
+</script>
+<!-- Disable right-click and inspect element -->
+<script src="./js/protection.js"></script>
+
+</body>
+</html>
