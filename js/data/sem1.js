@@ -225,8 +225,8 @@ SEMESTER_DATA.sem1 = {
       { time:"10:30 – 12:00", mon:"Mathematics I", tue:"Probability I", wed:"Mathematics I", thu:"T: Probability I",  fri:"Probability I" },
       { time:"12:05 – 1:35",  mon:"ITC", tue:"Statistics I", wed:"ITC",  thu:"Statistics I", fri:"Earth Science" },
       { time:"1:35 – 2:30",   mon:"Lunch", tue:"Lunch", wed:"Lunch", thu:"Lunch", fri:"Lunch" },
-      { time:"2:30 – 4:00",   mon:"Probability I", tue:"Economics I", wed:"T: Statistics I", thu:"Biology I", fri:"T: Mathematics I" },
-      { time:"4:00 – 5:35",   mon:"Economics I", tue:"Biology I", wed:"Earth Science", thu:"T: ITC", fri:"T: Earth Science/ T: Biology I" },
+      { time:"2:30 – 4:00",   mon:"Economics I", tue:"Economics I", wed:"T: Statistics I", thu:"Biology I", fri:"T: Mathematics I" },
+      { time:"4:00 – 5:35",   mon:"T: Economics I", tue:"Biology I", wed:"Earth Science", thu:"T: ITC", fri:"T: Earth Science/ T: Biology I" },
     ]
   },
 
