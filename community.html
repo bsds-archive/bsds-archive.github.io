@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>Community · BSDS Archive</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div id="scatter"></div>
+
+<header class="topbar">
+  <div class="brand">
+    <div class="mark">σ</div>
+    <div>BSDS ARCHIVE<small>ISI</small></div>
+  </div>
+  <nav class="top-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="index.html#about">Why BSDS</a>
+    <a href="semesters.html">Semesters</a>
+    <a href="about.html">About Us</a>
+    <a href="community.html" class="current">Community</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="nav-backdrop" id="navBackdrop"></div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+  </button>
+</header>
+
+<main>
+  <section class="hero hero-compact">
+    <div>
+      <div class="eyebrow"><a href="index.html">Home</a> · Community</div>
+      <h1 class="headline">The people<br>behind the <em>archive</em>.</h1>
+      <p class="lede">BSDS Archive is built and kept up to date by students, for students. Here's who's currently running it.</p>
+    </div>
+  </section>
+
+  <div class="section-head">
+    <h2>Team</h2>
+    <p>Photo is optional — leave it out for a plain initial badge.</p>
+  </div>
+  <section class="about">
+    <!--
+      EDIT ME: one .member-card per person. "photo" is optional — omit
+      the <img> entirely (see the second card below) and an initial
+      badge shows instead. "tags" can be however many you want — role,
+      year, CR, whatever's relevant — each just becomes a small pill,
+      same style as the course-name pills on the Semesters page.
+    -->
+    <div class="feature-grid" id="memberGrid">
+      <div class="member-card">
+        <img class="member-photo" src="files/community/founder.jpg" alt="Founder" onerror="this.remove()">
+        <div class="member-initial" data-name="Founder Name">F</div>
+        <h3>Founder Name</h3>
+        <div class="member-tags">
+          <span class="tag">Founder</span>
+          <span class="tag">Organizer</span>
+        </div>
+        <p>Started the archive and set up the site. Add a short line about them here.</p>
+      </div>
+
+      <div class="member-card">
+        <div class="member-initial" data-name="Co-Founder Name">C</div>
+        <h3>Co-Founder Name</h3>
+        <div class="member-tags">
+          <span class="tag">Co-Founder</span>
+          <span class="tag">3rd Year</span>
+        </div>
+        <p>No photo on this one — just leave the &lt;img&gt; tag out entirely and this initial badge shows automatically.</p>
+      </div>
+
+      <div class="member-card">
+        <div class="member-initial" data-name="Admin Name">A</div>
+        <h3>Admin Name</h3>
+        <div class="member-tags">
+          <span class="tag">Admin</span>
+          <span class="tag">CR</span>
+          <span class="tag">2nd Year</span>
+        </div>
+        <p>Keeps materials and announcements up to date each semester.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNITY MEMBERS — everyone else who's contributed, however
+       small; a lighter-weight card than the leadership grid above, just
+       a name + tag. Copy .member-mini as many times as you need. -->
+  <div class="section-head">
+    <h2>Community Members</h2>
+    <p>Everyone who's helped make this happen.</p>
+  </div>
+  <section class="about">
+    <div class="member-mini-grid" id="memberMiniGrid">
+      <!-- EDIT ME: one .member-mini per person. "tag" is just a label —
+           "Contributor", "Member", a batch year, whatever fits. -->
+      <div class="member-mini"><div class="member-initial" data-name="Student Name">S</div><h4>Student Name</h4><span class="tag">Contributor</span></div>
+      <div class="member-mini"><div class="member-initial" data-name="Student Name">S</div><h4>Student Name</h4><span class="tag">Member</span></div>
+      <div class="member-mini"><div class="member-initial" data-name="Student Name">S</div><h4>Student Name</h4><span class="tag">Contributor</span></div>
+      <div class="member-mini"><div class="member-initial" data-name="Student Name">S</div><h4>Student Name</h4><span class="tag">Member</span></div>
+    </div>
+    <p class="section-note">Want to be added here? See the <a href="about.html" style="color:var(--gold);">About page</a> for how the site's put together, or <a href="contact.html" style="color:var(--gold);">get in touch</a>.</p>
+  </section>
+
+  <footer>
+    <span>© 2025–26 · BSDS Archive</span>
+    <span>Built for students, by students</span>
+  </footer>
+</main>
+
+<script src="js/protection.js"></script>
+<script src="js/app.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    initScatter();
+    initFixedHeader();
+    initMobileNav();
+    initScrollReveal('.member-card');
+    initScrollReveal('.member-mini');
+    document.querySelectorAll('.member-initial').forEach((el) => {
+      el.textContent = (el.dataset.name || '?').trim().charAt(0).toUpperCase();
+    });
+  });
+</script>
+
+</body>
+</html>
